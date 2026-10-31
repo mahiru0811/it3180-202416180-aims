@@ -4,3 +4,6 @@
 
 - Sinh viên: Hoàng Quý Dương – MSSV 202416180
 - Chạy chương trình: `python main.py`
+
+## Requirements
+- Python >= 3.10
