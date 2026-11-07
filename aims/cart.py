@@ -27,6 +27,12 @@ class Cart:
         return sum(item.cost for item in self.items)
 
     def print_cart(self):
+        # Kiểm tra nếu giỏ hàng trống
+        if not self.items:
+            print("The cart is empty")
+            return
+
+        # Nếu có hàng thì in chi tiết như bình thường
         print("***********************CART***********************")
         print("Ordered Items:")
         for idx, dvd in enumerate(self.items, 1):
