@@ -14,7 +14,9 @@ class Cart:
             return False
         self.items.append(dvd)
         return True
-
+    def total_cost_with_discount(self, percent):
+        # Cố ý sai công thức: trả về phần tiền chiết khấu thay vì số tiền còn lại phải trả
+        return self.total_cost() * percent / 100
     def remove_dvd(self, dvd):
         if dvd in self.items:
             self.items.remove(dvd)
